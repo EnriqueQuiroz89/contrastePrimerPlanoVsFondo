@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <title>High Contrast</title>
+    <style>
+        nav {
+            background-color: black;
+            padding: 20px;
+            font-size: xx-large;
+        }
+
+        li {
+            display: inline;
+            padding: 30px;
+            margin: 10px auto;
+        }
+
+        #bajo {
+            color: navy
+        }
+
+        #medio {
+            color: blue;
+        }
+
+        #alto {
+            color: aquamarine;
+        }
+
+        .botones {
+            height: auto;
+            width: 100%;
+            margin: 20px auto;
+            background-color: blue;
+        }
+
+        button {
+            width: 20%;
+            height: 50px;
+            margin: 20px;
+            background-color: cornsilk;
+            font-size: large;
+        }
+
+        #botonAlto {
+            color: yellow;
+        }
+
+        #botonMedio {
+            color: silver;
+        }
+
+        #botonBajo {
+            color: color;
+        }
+
+        p {
+            text-align: center;
+            font-size: large;
+            color: red;
+        }
+
+        #relacionMinima {
+            font-size: xx-large;
+            color: navy;
+
+        }
+
+        section {
+            width: 90%;
+            margin: 10px auto;
+            background-color: gray;
+            padding: 10px;
+        }
+
+        #waTexto {
+            color: rgb(220, 248, 199);
+            background-color: rgb(44, 46, 119);
+        }
+
+        #waMensaje {
+            color: rgb(44, 46, 119);
+            background-color: rgb(220, 248, 199);
+
+        }
+
+        #waFondo {
+            color: rgb(44, 46, 119);
+            background-color: rgb(229, 221, 213);
+        }
+
+        section p {
+
+            font-size: x-large;
+            color: white;
+        }
+
+        .comparaColores {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            margin: 0px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li id="bajo">Bajo contraste</li>
+                <li id="medio">Medio contraste</li>
+                <li id="alto">Alto contraste</li>
+            </ul>
+        </nav>
+    </header>
+
+    <h1>Comparacion de bajo y alto contraste</h1>
+
+    <div class="botones">
+        <button id="botonAlto">Bajo contraste</button>
+        <button id="botonMedio">Medio contraste</button>
+        <button id="botonBajo">Alto contraste</button>
+    </div>
+
+    <p>La relacion minima recomendada entre primer Plano y fondo es de:</p>
+    <p id="relacionMinima">4.5:1, donde 4.5 es primer plano y 1 es color de fondo</p>
+    <p>¿Donde puedo comparar 2 colores para ver su relacion?</p>
+    <p>Haz click para <a target="blank"
+            href="https://app.contrast-finder.org/result.html?foreground=rgb(70,136,71)&background=%23E5E6E5&algo=Rgb&ratio=4.5&isBackgroundTested=false">conocer
+            el Ratio de 2 colores que desees.</a></p>
+
+    <div id="parrafos">
+        <section>
+            <p>Ejemplo Whats APP</p>
+            <button id="waTexto">Texto</button>
+            <button class="comparaColores">10.37 : 1</button>
+            <button id="waMensaje">Mensaje</button>
+            <button class="comparaColores">1.17 : 1</button>
+            <button id="waFondo">Fondo default</button>
+        </section>
+    </div>
+    |
+
+</body>
+
+</html>
